@@ -12,6 +12,7 @@ body{
 }
 
 
+
 img{
   min-width: 100%;
   height: 100%;
@@ -19,7 +20,14 @@ img{
 }
 
 
-/*HEADER< BOTTONI*/
+button{
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+/*HEADER BOTTONI*/
 header{
   position: relative;
   height: 70px;
@@ -29,12 +37,10 @@ header{
 
 
 
-button{
+header button{
   color: white;
   background-color: rgba(255, 255, 255, 0.4);
   padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 
@@ -93,11 +99,98 @@ main{
 }
 
 
+main .container:last-child{
+  margin-bottom: 20px;
+}
+
 
 
 
 /*FOOTER*/
-footer{
+footer .footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 70px;
   background-color: #222222;
+}
+
+
+
+.video-talk{
+  width: 250px;
+  height: 50px;
+  color: white;
+  margin: 0px 5px;
+}
+
+
+.video-talk i{
+  font-size: 30px;
+  margin: 5px;
+}
+
+
+.video-talk i:last-of-type{
+  font-size: 10px;
+}
+
+
+.video-talk span{
+  display: block;
+}
+
+
+
+.video{
+  position: relative;
+}
+
+
+
+
+.video-talk .video i{
+  position: absolute;
+  bottom: 15px;
+  left: 70px;
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+}
+
+.video i:last-of-type{
+  position: absolute; 
+  left: 120px;
+  bottom: 22px;
+  font-size: 10px;
+}
+
+
+.actions-icons{
+  height: 50px;
+  width: 400px;
+}
+
+
+
+
+
+
+.end-meeting{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 100%;
+  background-color: #4A4A4A;
+
+}
+
+
+
+.end{
+  color: red;
+  text-transform: capitalize;
+  font-size: 15px;
+  cursor: pointer;
 }
