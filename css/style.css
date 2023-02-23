@@ -5,18 +5,27 @@
 }
 
 
+
+
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
+img{
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+
+/*HEADER< BOTTONI*/
 header{
   position: relative;
-  height: 80px;
+  height: 70px;
   background-color: #000000;
-  
 }
+
 
 
 
@@ -25,7 +34,10 @@ button{
   background-color: rgba(255, 255, 255, 0.4);
   padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
 }
+
+
 
 
 .speaker, .fullscreen{
@@ -43,6 +55,49 @@ button{
 }
 
 
+
 .fullscreen{
   right: 1px;
+}
+
+
+/*MAIN*/
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #000000;
+  height: calc(100vh - 140px);
+  overflow-y: scroll;
+}
+
+
+
+.container{
+  position: relative;
+  height: 150px;
+  width: 250px;
+  margin: 8px 3px;
+}
+
+
+
+.container>span{
+  color: white;
+  background-color: rgba(121, 121, 121, 0.613);
+  padding: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+
+
+
+/*FOOTER*/
+footer{
+  height: 70px;
+  background-color: #222222;
 }
